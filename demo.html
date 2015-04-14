@@ -12,14 +12,15 @@
   box-sizing: border-box;
   color: white;
   display:block;
-  height: 5000px;
+  height: 2000px;
   width: 100%;
   background: #ddd;
-  margin-bottom: 300px;
+  margin: 300px 0;
 }
   
   #sticky1, #sticky2{
     padding: 20px;
+    border-bottom: solid 4px #333;
   }
   
   #sticky1{
@@ -51,10 +52,18 @@
   <div id="sticky2">A long div</div>
 </div>
   
-<script src="no-jquery.js" type="text/javascript"></script>
+<script src="no-jquery/no-jquery.js" type="text/javascript"></script>
 <script src="simple-sticky-element.js" type="text/javascript"></script>
   
 <script type="text/javascript">
+  var container = document.getElementById('container'),
+      stickyDiv1 = document.getElementById('sticky1'),
+      stickyDiv2 = document.getElementById('sticky2');
+  
+  var simpleSticky1 = new simpleSticky({
+    container: container,
+    element: stickyDiv1
+  });
   
 </script>
   
