@@ -6,15 +6,58 @@
   
 <style>
   
+#container{
+  font-family: sans-serif;
+  font-size: 40px;
+  box-sizing: border-box;
+  color: white;
+  display:block;
+  height: 5000px;
+  width: 100%;
+  background: #ddd;
+  margin-bottom: 300px;
+}
+  
+  #sticky1, #sticky2{
+    padding: 20px;
+  }
+  
+  #sticky1{
+    display: block;
+    box-sizing: border-box;
+    height: 300px;
+    width: 50%;
+    float: left;
+    background: red;
+  }
+  
+  #sticky2{
+    display: block;
+    box-sizing: border-box;
+    height: 1000px;
+    width: 50%;
+    float: right;
+    background: blue;
+  }
+  
 </style>
   
 </head>
 
 <body>
-
   
-<script src="index.html" type="text/javascript"></script>
-<script src="index.html" type="text/javascript"></script>
+<div id="container">
+  <div id="sticky1">A short div</div>
+  <div id="sticky2">A long div</div>
+</div>
+  
+<script src="no-jquery.js" type="text/javascript"></script>
+<script src="simple-sticky-element.js" type="text/javascript"></script>
+  
+<script type="text/javascript">
+  
+</script>
+  
 </body>
 
 </html>
